@@ -38,18 +38,10 @@ public class mjd implements ActionListener {
 	JButton mjdbutton3M;
 	JButton mjdbutton4M;
 	JButton setButton;
-	File file = new File("C:\\Users\\syfal\\Desktop\\Hi.txt");
 
-
-
-	
-	
 
 	mjd() {
-    	
-
-		ImageIcon mjdlogo = new ImageIcon("logo.png");
-		
+ 		
 
 		mjdbutton1M = new JButton("Fun Package A");
 		mjdbutton2M = new JButton("Study Package B");
@@ -66,7 +58,6 @@ public class mjd implements ActionListener {
 		JFrame mjdFrame = new JFrame();
 		Border mjdBorder = BorderFactory.createLineBorder(Color.green, 5);
 		
-		mjdLabel.setIcon(mjdlogo);
 		mjdLabel.setForeground(Color.green);
 	    mjdpanel.setBorder(BorderFactory.createEmptyBorder(90, 90, 70, 90));
 		mjdLabel.setBounds(0,0,520,520);
@@ -131,15 +122,11 @@ public class mjd implements ActionListener {
 		mjdFrame.add(mjdbutton4M);
 		mjdFrame.add(setButton);
 
-		
-		mjdLabel.setIcon(mjdlogo);
-		mjdFrame.setIconImage(mjdlogo.getImage());
-		
+			
 	}
 
 public static void main(String[] args) throws IOException {
 	new mjd();
-	new userinput();
 	 }
 
 
@@ -162,61 +149,11 @@ if(e.getSource()==setButton) {
 }
 
 
-
-		if(e.getSource()==mjdbutton1M) {
-            try {
-
-
-                
-            	
-            	
-            	FileWriter myWriter = new FileWriter("C:\\Users\\syfal\\Desktop\\Hi.txt");
-            	Scanner URL2 = new Scanner(System.in);
-            	String userName3 = JOptionPane.showInputDialog("Enter URL 3");
-                
-
-            	
-                myWriter.write(userName3);
-                myWriter.close();
-            System.out.println("Successfully wrote to the file.");
-            	
-
-            String data = URL2.nextLine();
-            System.out.println(data);
-      	
-            
-            URI uri3= new URI(userName3);
-
-     	   java.awt.Desktop.getDesktop().browse(uri3);
-        	   if(!file.exists()) {
-    		    	JOptionPane.showMessageDialog(null, "Edit the Packages by clicking the setting button in the lower right corner", "Important Message", JOptionPane.INFORMATION_MESSAGE);
-    		       file.createNewFile();
-        	    }
-        	    
-    		        else {
-    		              myWriter.write(userName3);
-    		                myWriter.close();
-    		            System.out.println("Successfully wrote to the file.");
-					}   
-    		        
-         	   URI uri= new URI("https://www.instagram.com/");
-         	   URI uri2= new URI("www.facebook.com");
-
-            	   java.awt.Desktop.getDesktop().browse(uri);
-            	   java.awt.Desktop.getDesktop().browse(uri2);
-         	       java.awt.Desktop.getDesktop().browse(uri3);
-
-         	  } catch (Exception ex) {
-         	    ex.printStackTrace();
-         	  }
-		}
-
 		if(e.getSource()==mjdbutton2M) {
            
             try {
 
             String URL1a;
-
             URI uri= new URI("www.google.com");
       	   java.awt.Desktop.getDesktop().browse(uri);
     		    } catch (Exception ex) {

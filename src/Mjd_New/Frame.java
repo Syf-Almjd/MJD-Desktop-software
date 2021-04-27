@@ -54,12 +54,6 @@ Frame() {
 	mjdbutton2 = new JButton(Option2);
 	mjdbutton3 = new JButton(Option3);
 	mjdbutton4 = new JButton(Option4);
-	mjdbutton5 = new JButton(Option5);
-	mjdbutton6 = new JButton(Option6);
-	mjdbutton7 = new JButton(Option7);
-	mjdbutton8 = new JButton(Option8);
-	ImageIcon mjdlogo = new ImageIcon("logo.png");
-
 
 		Border mjdline = new LineBorder(Color.BLUE);
 		Border mjdmargin = new EmptyBorder(5, 15, 5, 15);
@@ -89,23 +83,6 @@ Frame() {
 		mjdbutton4.setBackground(Color.WHITE);
 		mjdbutton4.setBorder(mjdcompound); 
 		
-	    mjdbutton5.setForeground(Color.BLACK);
-   		mjdbutton5.setBackground(Color.WHITE);
-   		mjdbutton5.setBorder(mjdcompound);
-   		
-	 	mjdbutton6.setForeground(Color.BLACK);
-	 	mjdbutton6.setBackground(Color.WHITE);
-	 	mjdbutton6.setBorder(mjdcompound);
-	 	
-	    mjdbutton7.setForeground(Color.BLACK);
-   		mjdbutton7.setBackground(Color.WHITE);
-   		mjdbutton7.setBorder(mjdcompound);
-   		
-	 	mjdbutton8.setForeground(Color.BLACK);
-	 	mjdbutton8.setBackground(Color.WHITE);
-	 	mjdbutton8.setBorder(mjdcompound);
-		
-		
 
 
 		mjdbutton1.setVisible(true); 
@@ -115,46 +92,20 @@ Frame() {
 		mjdbutton2.setVisible(true); 
 		mjdbutton2.setBounds(230, 10, 200, 40);
 		mjdbutton2.addActionListener(this);
-
-		//mjdbutton5.setVisible(true); 
-		//mjdbutton5.setBounds(420, 10, 200, 40);
-		//mjdbutton5.addActionListener(this);
-		
-		
-		//	mjdbutton6.setVisible(true); 
-		//mjdbutton6.setBounds(640, 10, 200, 40);
-		//mjdbutton6.addActionListener(this);
-		
-		
-
-		mjdbutton4.setVisible(true); 
-		mjdbutton4.setBounds(10, 60, 200, 40);
-		mjdbutton4.addActionListener(this);
 		
 		mjdbutton3.setVisible(true); 
 		mjdbutton3.setBounds(230, 60, 200, 40);
 		mjdbutton3.addActionListener(this);
-
-		//mjdbutton7.setVisible(true); 
-		//mjdbutton7.setBounds(420, 60, 200, 40);
-		//mjdbutton7.addActionListener(this);
 		
-		
-		//mjdbutton8.setVisible(true); 
-		//mjdbutton8.setBounds(640, 60, 200, 40);
-		//mjdbutton8.addActionListener(this);
-		
-		
-		
-		
-		
+		mjdbutton4.setVisible(true); 
+		mjdbutton4.setBounds(10, 60, 200, 40);
+		mjdbutton4.addActionListener(this);
 
 		mjdFrame1.setLayout(null);
 		mjdFrame1.setResizable(false);
 		mjdFrame1.setVisible(true);
 		mjdFrame1.setTitle("Settings"); 
 		mjdFrame1.setSize(460,155);
-		//mjdFrame.pack();
 		mjdFrame1.add(mjdLabel);
 		mjdFrame1.add(mjdbutton1);
 		mjdFrame1.add(mjdbutton2);
@@ -164,8 +115,6 @@ Frame() {
 		mjdFrame1.add(mjdbutton6);
 	    mjdFrame1.add(mjdbutton7);
 		mjdFrame1.add(mjdbutton8);
-		mjdLabel.setIcon(mjdlogo);
-		mjdFrame1.setIconImage(mjdlogo.getImage());
 		mjdFrame1.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 
 		
@@ -208,7 +157,7 @@ public static void main(String[] args){
             try {
             	
 
-                JOptionPane.showMessageDialog(null, "Underdevelopment.. \nThank you for your patience");
+                JOptionPane.showMessageDialog(null, "Under development.. \nThank you for your patience");
 
          	  } catch (Exception ex) {
          	    ex.printStackTrace();
@@ -224,46 +173,7 @@ public static void main(String[] args){
          	  } catch (Exception ex) {
          	    ex.printStackTrace();
          	  }
-		}
-		if(e.getSource()==mjdbutton5) {
-            try {
 
-               JOptionPane.showMessageDialog(null, "Opened Package A");
-
-         	  } catch (Exception ex) {
-         	    ex.printStackTrace();
-         	  }
-		}
-		if(e.getSource()==mjdbutton6) {
-           
-            try {
-          	
-
-   			JOptionPane.showMessageDialog(null, "Opened Package B");
-          	  } catch (Exception ex) {
-          	    ex.printStackTrace();
-          	  }
-
-		}
-		if(e.getSource()==mjdbutton7) {
-            try {
-         	   
-               JOptionPane.showMessageDialog(null, "Thanks for your time1");
-
-         	  } catch (Exception ex) {
-         	    ex.printStackTrace();
-         	  }
-		
-		if(e.getSource()==mjdbutton8) {
-            try {
-         	   
-               JOptionPane.showMessageDialog(null, "Thanks for your time2");
-
-         	  } catch (Exception ex) {
-         	    ex.printStackTrace();
-         	  }
-		}
-            
 		}
 		}
 	}
