@@ -11,7 +11,7 @@ public class URLS {
 	public static String data;
 	public static void main(String[] args) {
 	    try {
-	      File URLsFile = new File("C:\\Users\\syfal\\Desktop\\URLS.txt");
+	      File URLsFile = new File(".URLS");
 	      Scanner myReader = new Scanner(URLsFile);
 //	      while (myReader.hasNextLine()) {
 	        data = myReader.next();

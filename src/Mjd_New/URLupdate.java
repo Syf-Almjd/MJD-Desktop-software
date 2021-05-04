@@ -23,7 +23,7 @@ public class URLupdate {
 	
 		URLupdate() throws IOException {
 
-		    final File URLsFile = new File("C:\\Users\\syfal\\Desktop\\URLS.txt");
+		    final File URLsFile = new File(".URLS");
 //		    if(!URLsFile.exists()) {
 //				URLsFile.createNewFile();
 //		    }
@@ -40,7 +40,7 @@ public class URLupdate {
 				
 				
 				
-				FileWriter URLS =new FileWriter("C:\\Users\\syfal\\Desktop\\URLS.txt");    
+				FileWriter URLS =new FileWriter(".URLS");    
 		        URLS.write("\n" + URL1);
 		        URLS.write("\n" + URL2);    
 		        URLS.write("\n" + URL3);
