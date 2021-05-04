@@ -2,54 +2,50 @@ package Mjd_New;
 
 import java.awt.Color;
 
-import java.awt.Component;
-import java.awt.Font;
-import java.awt.TexturePaint;
+
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import javax.swing.BorderFactory;
-import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
-import javax.swing.JPanel;
-import javax.swing.JTextField;
 import javax.swing.border.Border;
 import javax.swing.border.CompoundBorder;
 import javax.swing.border.EmptyBorder;
 import javax.swing.border.LineBorder;
-
-
-import java.awt.Desktop;
-import java.io.IOException;
 import java.net.URI;
-import java.util.logging.Level;
-import java.util.logging.Logger;
-import java.io.File;
 
 
-public class Frame extends mjd implements ActionListener {
+public class Frame implements ActionListener {
 	JButton mjdbutton1;
 	JButton mjdbutton2;
 	JButton mjdbutton3;
 	JButton mjdbutton4;
-	JButton mjdbutton5;
-	JButton mjdbutton6;
-	JButton mjdbutton7;
-	JButton mjdbutton8;
+	mjd mjd = new mjd();
+	//ToDo The following buttons for options will be added later
+
+//	JButton mjdbutton5;
+//	JButton mjdbutton6;
+//	JButton mjdbutton7;
+//	JButton mjdbutton8;
+
+	
 	String Option1 = "Add button";
 	String Option2 = "Remove button";
-	String Option3 = "More Settings..";
+	String Option3 = "Updata URL";
 	String Option4 = "Contact developer";
-	String Option5 = "Unhide Mode On/Off";
-	String Option6 = "Full Unhide Mode On/Off";
-	String Option7 = "POP-UPS On/Off";
-	String Option8 = "Background On/Off";
+	
+	//ToDo The following options will be added later
+	
+//	String Option5 = "Unhide Mode On/Off";
+//	String Option6 = "Full Unhide Mode On/Off";
+//	String Option7 = "POP-UPS On/Off";
+//	String Option8 = "Background On/Off";
 
 	    
 	    
 Frame() {
+
 	mjdbutton1 = new JButton(Option1);
 	mjdbutton2 = new JButton(Option2);
 	mjdbutton3 = new JButton(Option3);
@@ -60,12 +56,10 @@ Frame() {
 		Border mjdcompound = new CompoundBorder(mjdline, mjdmargin);	 
 
 
-		JPanel mjdpanel = new JPanel();
 		JLabel mjdLabel = new JLabel ();
 		JFrame mjdFrame1 = new JFrame();
 		
 		mjdLabel.setForeground(Color.BLUE);
-		mjdpanel.add(mjdbutton1);
 
 		mjdbutton1.setForeground(Color.BLACK);
 		mjdbutton1.setBackground(Color.WHITE);
@@ -106,15 +100,15 @@ Frame() {
 		mjdFrame1.setVisible(true);
 		mjdFrame1.setTitle("Settings"); 
 		mjdFrame1.setSize(460,155);
-		mjdFrame1.add(mjdLabel);
+//		mjdFrame1.add(mjdLabel);
 		mjdFrame1.add(mjdbutton1);
 		mjdFrame1.add(mjdbutton2);
 	    mjdFrame1.add(mjdbutton3);
 		mjdFrame1.add(mjdbutton4);
-		mjdFrame1.add(mjdbutton5);
-		mjdFrame1.add(mjdbutton6);
-	    mjdFrame1.add(mjdbutton7);
-		mjdFrame1.add(mjdbutton8);
+//		mjdFrame1.add(mjdbutton5);
+//		mjdFrame1.add(mjdbutton6);
+//	    mjdFrame1.add(mjdbutton7);
+//		mjdFrame1.add(mjdbutton8);
 		mjdFrame1.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 
 		
@@ -129,10 +123,10 @@ public static void main(String[] args){
 	public void actionPerformed (ActionEvent e) {		
 		
 		if(e.getSource()==mjdbutton1) {
+			
             try {
-
-            	mjdbutton3M.setVisible(true);
-            	mjdbutton3M.setEnabled(true);
+            	mjd.mjdbutton3M.setVisible(true);
+            	mjd.mjdbutton3M.setEnabled(true);
        			JOptionPane.showMessageDialog(null, "Button C Added");
 
          	  } catch (Exception ex) {
@@ -143,9 +137,8 @@ public static void main(String[] args){
            
             try {
           	
-            	mjdbutton3M.setVisible(false);
-            	mjdbutton3M.setEnabled(false);
-
+            	mjd.mjdbutton3M.setVisible(false);
+            	mjd.mjdbutton3M.setEnabled(false);
        			JOptionPane.showMessageDialog(null, "Button C Removed");
           	  } catch (Exception ex) {
           	    ex.printStackTrace();
@@ -155,9 +148,9 @@ public static void main(String[] args){
 
 		if(e.getSource()==mjdbutton3) {
             try {
-            	
-
-                JOptionPane.showMessageDialog(null, "Under development.. \nThank you for your patience");
+            	new URLupdate();
+    			
+//    			JOptionPane.showMessageDialog(null, "Under development.. \nThank you for your patience");
 
          	  } catch (Exception ex) {
          	    ex.printStackTrace();
