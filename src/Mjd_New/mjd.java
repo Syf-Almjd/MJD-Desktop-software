@@ -45,7 +45,7 @@ public class mjd implements ActionListener {
 
 	mjd() {
 		
-		mjdlogo = new ImageIcon("Star_icon.png");
+		mjdlogo = new ImageIcon("Star.png");
 		mjdbutton1M = new JButton("Fun Package A");
 		mjdbutton2M = new JButton("Study Package B");
 		mjdbutton3M = new JButton("Package C");
@@ -190,8 +190,6 @@ public class mjd implements ActionListener {
          	    ex.printStackTrace();
          	  }
 
-        			
-		}
-	}
-	
+		  }		
+      } 
 }

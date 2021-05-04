@@ -7,7 +7,6 @@ import java.io.IOException;
 
 import javax.swing.JOptionPane;
 
-
 public class notify {
 	static String URL1;
 	static String URL2;
@@ -43,7 +42,7 @@ public class notify {
 //		        URLS.write("\nURL 2 for package 3 is: " + URL8);    
 //		        URLS.write("\nURL 3 for package 3 is: " + URL9);
 //		        URLS.close();
-				
+//				
 				URLsFile.createNewFile();
 		        FileWriter URLS =new FileWriter("C:\\Users\\syfal\\Desktop\\URLS.tx t");    
 		        URLS.write(URL1);

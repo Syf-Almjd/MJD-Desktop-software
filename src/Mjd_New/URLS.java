@@ -26,6 +26,4 @@ public class URLS {
 	      e.printStackTrace();
 	    }
 	}
-
-	
 }

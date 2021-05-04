@@ -42,8 +42,7 @@ public class Frame implements ActionListener {
 //	String Option7 = "POP-UPS On/Off";
 //	String Option8 = "Background On/Off";
 
-	    
-	    
+
 Frame() {
 
 	mjdbutton1 = new JButton(Option1);
@@ -117,7 +116,6 @@ Frame() {
 public static void main(String[] args){
 	new Frame();
 	 }
-
 
 	@Override
 	public void actionPerformed (ActionEvent e) {		

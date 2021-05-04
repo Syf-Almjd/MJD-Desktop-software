@@ -37,9 +37,8 @@ public class URLupdate {
 				URL9 = ("https://" + JOptionPane.showInputDialog("Please type URL 3 for package 3: "));
 				
 				
-				
 				FileWriter URLS =new FileWriter(".URLS");    
-		        URLS.write("\n" + URL1);
+		        URLS.write(URL1);
 		        URLS.write("\n" + URL2);    
 		        URLS.write("\n" + URL3);
 		        URLS.write("\n" + URL4);
@@ -57,5 +56,3 @@ public class URLupdate {
 			new URLupdate();
 		}
 	}
-
-
