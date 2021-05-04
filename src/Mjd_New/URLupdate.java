@@ -24,9 +24,7 @@ public class URLupdate {
 		URLupdate() throws IOException {
 
 		    final File URLsFile = new File(".URLS");
-//		    if(!URLsFile.exists()) {
-//				URLsFile.createNewFile();
-//		    }
+    
 		    	JOptionPane.showMessageDialog(null, "1- Edit the Packages by clicking the setting button in the lower right corner \n2-If nothing please leave empty \n3- Please type WITHOUT HTTP or WWW \n4- To skip just click Enter or cancel ", "Important Message", JOptionPane.INFORMATION_MESSAGE);
 				URL1 = ("https://" + JOptionPane.showInputDialog("Please type URL 1 for package 1: "));
 				URL2 = ("https://" + JOptionPane.showInputDialog("Please type URL 2 for package 1: "));
